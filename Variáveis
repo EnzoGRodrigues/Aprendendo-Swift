@@ -1,0 +1,39 @@
+Declarando espaços de memórias no computador:
+  -existem duas maneiras de realizar essa operação: declarando uma variável e declarando uma constante.
+  
+Declarando uma variável:
+  
+  -var é uma variável mútavel para armazenar dados
+  -para declarar variáveis, seja números, caracteres, números decimais, etc, é utilizado o comando "var".
+  
+  var message = "Olá mundo" //a variável "message" recebe o texto "Olá mundo"
+  
+  print (message) //imprime o valor declarado acima
+                  //"print" comando para impressão do valor na tela
+                  
+  -variáveis conforme o programa for sendo executado, ele pode ser alterado.
+  
+  var message = "Olá mundo"
+  message = "Enzo"
+  
+  print(message) //irá imprimir o valor "Enzo"
+  
+ -------------------------------------------------------------------------------------------------------------------------
+ 
+  Declarando uma constante:
+  
+   -let (constante) é uma variável para armazenar dados
+   -constantes são variáveis que não podem ser alterado o seu estado, é utilizado o comando "let".
+    
+    let name = "Enzo" //variável "name" recebe o valor "Enzo", comando utilizado "let" para uma constante
+    print(name) //imprime o valor da variável na tela
+    
+    -esse valor não pode ser alterado, então, se colocarmos outro valor após esse o programa irá nos relatar um erro
+    
+    let name = "Enzo"
+    name = "Gabriel"
+    print(name)
+    
+    -neste caro acima, o programa nos relataria um problema dizendo que não é possível a alteração porque a variável "name" é um "let", no caso, uma constante;
+  
+  
