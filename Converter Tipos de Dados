@@ -1,0 +1,16 @@
+CONVERTER TIPOS DE DADOS
+
+  let x = 10 //declarando uma variável "x" que recebe o valor "10"
+             //automaticamente eu sei que o 10 do tipo int
+  -para converter esse valor e transformar ele em texto, fazemos assim:
+  
+  let name = string (x) //agora o "10" que era tratado como número, agora ele esta sendo tratado como um texto
+  print (name) //o valor impresso na tela é "10"
+  -são "10" diferentes, não são iguais
+  
+  let y = "abc" //criamos uma variável "y" que recebe o valor "10" do tipo string no formato de texto
+  let value = int(y)
+  print(value) //o valor impresso seria "null" porque o programa não consegue converter "abc" para número.
+  
+  
+  
