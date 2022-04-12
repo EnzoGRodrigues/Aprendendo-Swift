@@ -1,0 +1,14 @@
+TIPOS DE DADOS
+ 
+  let int = 1 // int é a mesma coisa que inteiros, int não aceita casas decimais
+  let double = 3.14 // double é para números decimais
+  let string = "Enzo" // String serve para armazenar textos
+  let bool = true // bool serve para armazenar uma expressão verdadeira ou falsa
+  
+USANDO VARIÁVEIS COM TIPOS DE DADOS:
+
+  let number: int = 1 // criamos uma variável "number" que não pode ser alterada porque é "let" e é do tipo "int" onde o valor dela semmpre será "int"
+  let pi: double = 3.14
+  let name: string = "Enzo"
+  let no: bool = false 
+-declaramos os tipos e especificamos os tipos
