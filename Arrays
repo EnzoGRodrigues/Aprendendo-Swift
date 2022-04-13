@@ -1,0 +1,19 @@
+ARRAYS
+
+-parecido com tuplas, arrays são coleções de dados (lista de dados), onde cada item dessa lista é um elemento específico do mesmo tipo.
+-podemos alocar espaços gigantescos de tamanhos de dados, coleções que podemos tratar como listas, parecido com uma grade onde você vai alocar várias variáveis e essas variáveis precisam ser do mesmo tipo
+-ex: uma lista de contatos em um aplicativo, uma base de dados de nomes, tudo em um contexto maior, em um contexto onde você pode utilizar o mesmo tipo de dado
+
+let userNames = [*Enzo*, *Tiago*, *Lucas*] //a variável "userNames" recebe uma coleção. Quando colocamos entre colchetes, falamos que ali será uma coleção. Neste caso ele já sabe que o tipo aqui é String, porque o valor colocado são só textos
+let userNames: [String] = [*Enzo*, *Tiago*, *Lucas*] //podemos também declarar o tipo da variável
+
+-do jeito que declaramos essa variável, não é possível alterar os dados, porque declaramos com "let" imutável.
+
+
+var userNames: [String] = [] //declarando como "var", podemos alterar ou incluir um valor depois, não necessariamente na hora da declaração
+userNames.append(*Felipe*) //"append" é um comando que nos ajuda a incluir valores na coleção, uma coleção mutável.
+
+-além de usar o comando "append" podemos também incrementar valores na variável
+
+userNames += [*Enzo*, *Lucas*] //o valor impresso seria "Felipe, Enzo, Lucas" porque juntou o valor agregado de cima com o que incrementamos agora.
+
