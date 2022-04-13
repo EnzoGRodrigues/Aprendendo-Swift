@@ -1,0 +1,76 @@
+INCREMENTOS E OPERADORES LÓGICOS
+
+OPERADORES LÓGICOS:
+  -Utilizamos o "bool", que é a operação booleana que nos da um resultado "true or false".
+  -O tipo booleano nos é interessante para fazermos comparações, operações lógicas ou expressões.
+  
+ Exemplo de operadores lógicos:
+ maior >  
+ menor <
+ maior igual >=
+ menor igual <=
+ comparação (igualdade) ==
+ comparação (diferente) !=
+ atribuição =
+ inversão ! 
+ ou ||
+ e &&
+  let result = 2 > 3 //aqui criamos uma variável "result" que está recebendo uma expressão (uma expressão pode ser qualquer coisa que resulte em um verdadeiro ou falso)
+                     // o resultado dessa expressão não será um resultado numérico, mas sim "false" já que 2 não é maior que 3
+  
+  -podemos também comparar valores
+  
+  let x = 10
+  let y = 20
+  let res = x == y //os dois iguais são utilizados para comparar valores e que assim resulte em uma expressão de "true or false"
+                   //neste exemplo, o resultado será "false" porque o x recebeu o valor 10 e y recebeu o valor 20, no entanto, eles não são iguais
+  
+  let res = x != y //já neste caso, o resultado seria "true" pois x(que vale 10) é diferente de y(que vale 20).
+  
+  -podemos também usar textos
+  
+  let firstName = "Enzo"
+  let lastName = "Rodrigues"
+  
+  firstName > lastName //quando comparamos strings no quesito de tamanho (maior ou menor), ele vai ordenar os caracteres.
+                       //como a letra E vem antes da letra R, o valor retornado será "false", pois quem vem depois (quem é a letra maior) é o R
+  
+  -podemos fazer também com igual
+  
+  firstName == lastName //o valor retornado desta expressão será "false" já que o firstName não é igual ao lastName
+  
+  -usando o operador lógico "E", "OU" e "inversão"
+  
+  let isDriver = true
+  let isStudent = true
+  
+  !isStudent //em cima nós declaramos que as variáveis "isDriver" e "isStudent" são "true"
+             //usando o operador de inversão, a variável "isStudent" vira "false"
+             
+   let r = isDriver || isStudent //esta expressão diz que "r" recebe ou motorista(isDriver) ou estudante(isStudent). O operador lógico para representar a operação "OU" é assim ||
+   print(r) //caso algumas das opções seja "true" o valor impresso será "true", se as duas opções forem "false" o valor impresso seria "false"
+   
+   let r = isDriver && isStudent //agora a expressão diz que "r" recebe "isDriver" e "isStudent". O operador lógico para representar a operação "E" é assim &&
+   print(r) //neste caso, para ele retornar um valor "true" os DOIS valores devem ser "true", caso um for "false" o valor retornado será "false"
+  
+   -podemos também fazer uma composição
+   
+   isDriver && 10 > 5 //esta expressão diz que se for motorista(isDriver) e 10 for maior que 5, o retorno será verdadeiro
+                      //o retorno só será verdadeiro se as duas expressões forem verdadeiras (true), caso uma seja "false" o valor retornado será "false"
+                      
+                      
+ INCREMENTOS:
+ 
+   -podemos também incrementar operações, seja com textos ou com números
+   
+   Exeplos de incrementações
+   
+   soma += (incrementação)
+   subtração - (decrementação)
+   
+   var z = 10 //declarada a variável "z" e atribuindo o valor "10" nela
+   z += 1 //depois da incrementação (soma) de 1, o valor de "z" passa a ser "11"
+   
+   var q = 12 //declarada a variável "q" e atribuindo o valor "12" nela
+   q -= 2 //depois da decrementação (subtração) de 2, o valor de "q" passa a ser "10"
+ 
