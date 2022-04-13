@@ -1,0 +1,52 @@
+CONDIÇÕES
+
+  -usaremos as expressões que aprendemos (aquelas que retornam verdadeiro e falso) para criar tomadas de decisão dentro do código, ou seja, condições para que ele teste e logo continua o fluxo do programa ou não
+  
+  Condições usadas:
+  IF - se
+  ELSE - se não
+  ELSE IF 
+  
+  let isHungry = true //esta operação nos diz que a variável "isHungry" é "true"
+  let isThirsty = true
+  
+  if isHungry { //se (if) for verdadeiro vai executar o print abaixo
+      print("estou com fome") //nesta fase do código, se for verdadeira a variável "isHungry" ele vai imprimir na tela "estou com fome"
+  }else if isThirsty{ //se a opção de cima for falsa, e esta verdadeira, o programa irá executar o print abaixo
+      print("estou com sede")
+  else{ //se não (else) for "true" vai executar a opção abaixo
+      print("estou satisfeito") //imprime "estou satisfeito" caso o valor de "isHungry" seja falso
+  }
+      
+  
+  ESCOPO DO BLOCO
+  
+  var product: String
+  
+  let company = "Apple"
+  if company == "Google"{
+      product = "Android"
+  } else {
+       product = "iPhone"
+  }
+  
+  print(product)
+  
+  -é importante sempre declarar a variável no escopo do código, caso eu declarasse a variável "product" dentro de algum "if", eu n poderia chamar ela fora da estrutura do "if" que ela foi declarada
+  
+  -CONDICIONAL IF ELSE -> OPERADOR TERNARIO
+  -sintaxe:
+    -expressão ? valor-true : valor-false
+   IF == ?
+   ELSE == :
+   
+   exemplo:
+   
+   product = company == "Google" ? "Android" : "iPhone" //"product" recebe uma expressão onde "company" é igual a "Google"
+                                                        //SE (?) essa expressão for verdadeira, irá retornar "Android"
+                                                        //SENAO (:) essa expressão irá retornar "iPhone"
+   print(product) //imprime o resultado
+   
+  -este código é o mesmo que tem mais acima, mas muito mais prático e enxuto 
+  
+  
