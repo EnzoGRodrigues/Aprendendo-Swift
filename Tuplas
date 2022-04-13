@@ -1,0 +1,38 @@
+TUPLAS
+  -tuplas são formas de armazenar uma coleção de dados de um tipo específico, de um contexto específico
+  
+  Exemplo:
+    -vamos supor que eu vou estar trabalhando com dados de um banco de dados e eu tenho o nome de usuário e a senha de usuário
+    -eu poria declarar essas variáveis separadamente
+    
+    var username = "Enzo"
+    var password = "123"
+    
+    -ao invés de trabalhar separadamente, as tuplas nos ajudam a contextualizar as informações que a gente quer
+    -para declarar uma tupla, é bem parecido como declarar uma variável imutável (let)
+    
+    let coords: (double, double) = (52.14, 56.36) //declaramos uma tupla do nome "coords"  e o tipo dela fica dentro de parênteses (double, double)
+    coords.0 //após declarar, temos que acessar essa variável, e com essa sintaxe nós conseguirmos fazer isso. (exemplo de acesso via índice)
+    coords.1 //o acesso ".0" é o primeiro valor declarado, e o segundo é ".1". (exemplo de acesso via índice)
+             //assim o valor impresso na tela, será respectivamente "52.14, 56.36"
+    
+    let coords = (lat: 52.14, lng: 56.36) //agora nós nomeamos nossa tupla, e assim nós podemos chamar ela não pelo índice mas sim pelo nome
+    coords.lat //fica mais fácil e mais legível nomear a tupla e acessar ela pelo nome
+    coords.lng
+    
+    lat camera = (x: 10, y: 20, z: 1)
+    
+    let (x,y,z) = camera //descompactação da tupla, podemos descobrir o valor de cada variável fazendo isso
+    print(x)
+    print(y)
+    print(z)
+    
+    let (x,y,_) = camera //se colocamos o "_" no lugar do "z", dizemos ao swift que não queremos mais aquela variável
+    print(x)             //desse jeito podemos excluir variáveis que achamos desnecessárias
+    print(y)
+ 
+    let user = (nome: "Enzo", age: "21")
+    user.name
+    user.age
+    
+    -é interessante usarmos tuplas porque podemos criar contextos e declarar essas variáveis em conjuntos, para não ficar declarando uma por uma
