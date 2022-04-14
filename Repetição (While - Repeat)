@@ -1,0 +1,56 @@
+FOR E WHILE
+
+  -usamos essas funções para repetição.
+  
+  Sintaxe:
+    while CONDIÇÃO {
+            bloco de looping
+            bloco de código
+}
+
+  -entendendo "CONDIÇÃO"
+    precisamos criar algo que a gente consiga, no futuro, evitar que essa condição de verdadeira. Porque, imagina se uma condição der sempre verdadeira
+    
+    LOOPING INFINITO:
+      -para isso precisamos uma condição que dê verdadeiro verdadeiro.
+      
+    LOOPS MAIS USADOS:
+    
+        ex com while:
+        
+        -com WHILE, o programa checa PRIMEIRO a condição
+        
+        var i = 1
+        
+        while i<10 {  //confere a condição e depois roda o código
+            print(i) //neste bloco de código precisamos que a nossa CONDIÇÃO, que é (i<10), em algum momento fique falsa
+          i += 1 //por isso usamos a incrementação, para que cada vez que o programa ler o código, ele ir incrementando um índice (i) até que a CONDIÇÃO fique falsa
+       }
+       
+       
+       ex com repeat:
+       
+       -com REPEAT, ele faz primeiro uma instrução, depois ele chega a condição
+       
+       i = 1
+       repeat {
+            print (i) //roda pelo menos uma vez o código e depois faz a conferência
+            i += 1
+      } while (i < 10)
+      
+      
+      -usando o i como 10 para ver a diferença entre as duas operações
+      
+      var i = 10
+      
+      while i < 10 { //neste caso nenhum valor será impresso na tela porque a CONDIÇÃO será lida primeiro. 
+            print (i) //como o valor de i é 10 e o bloco de código só será realizado se i fosse menor que 10, então não irá imprimir nenhuma mensagem ao usuário.
+            i += 1
+     }
+     
+     var i = 10
+     
+     repeat {
+          print (i) //neste caso, o bloco de código seria impresso pelo menos uma vez, antes da condição, então o resultado impresso seria 10.
+          i += 1 
+    } while (i < 10) //quando o repeat ler a condição, ele não vai imprimir mais nada na tela.
